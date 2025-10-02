@@ -1,0 +1,23 @@
+{
+  "name": "Saurabh Tiwari's Portfolio",
+  "short_name": "Saurabh's Portfolio",
+  "description": "Saurabh Tiwari is an Associate Software Engineer specializing in WordPress and Full-Stack Development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c101a",
+  "theme_color": "#6366F1",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
