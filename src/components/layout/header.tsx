@@ -10,21 +10,13 @@ import { ThemeToggle } from '@/components/theme-toggle';
 import { Icons } from '@/components/icons';
 import { useState } from 'react';
 import type { Profile } from '@/lib/types';
-
-const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/experience', label: 'Experience' },
-  { href: '/contact', label: 'Contact' },
-  { href: '/admin', label: 'Admin' },
-];
+import { NavLinks } from './nav-links';
 
 type HeaderProps = {
   profile: Pick<Profile, 'name' | 'links'>
 }
 
 export function Header({ profile }: HeaderProps) {
-  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -34,20 +26,7 @@ export function Header({ profile }: HeaderProps) {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="font-headline font-bold">{profile.name}</span>
           </Link>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'transition-colors hover:text-foreground/80',
-                  pathname === link.href ? 'text-foreground' : 'text-foreground/60'
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+          <NavLinks />
         </div>
 
         {/* Mobile Menu */}
@@ -67,19 +46,7 @@ export function Header({ profile }: HeaderProps) {
             </Link>
             <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
               <div className="flex flex-col space-y-3">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={cn(
-                        "transition-colors hover:text-foreground",
-                        pathname === link.href ? 'font-semibold text-foreground' : 'text-muted-foreground'
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                <NavLinks isMobile onLinkClick={() => setIsMobileMenuOpen(false)} />
               </div>
             </div>
           </SheetContent>
