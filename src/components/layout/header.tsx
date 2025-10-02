@@ -1,11 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { Github, Menu } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger } from '@/components/ui/sheet';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Icons } from '@/components/icons';
 import { useState } from 'react';
@@ -41,7 +39,13 @@ export function Header({ profile }: HeaderProps) {
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="pr-0">
-            <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
+            <SheetHeader className="sr-only">
+              <SheetTitle>Mobile Menu</SheetTitle>
+              <SheetDescription>
+                A list of navigation links for the portfolio site.
+              </SheetDescription>
+            </SheetHeader>
+            <Link href="/" className="flex items-center pl-6" onClick={() => setIsMobileMenuOpen(false)}>
               <span className="font-headline font-bold">{profile.name}</span>
             </Link>
             <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
