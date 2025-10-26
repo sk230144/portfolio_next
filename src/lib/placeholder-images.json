@@ -1,6 +1,18 @@
 {
   "placeholderImages": [
     {
+      "id": "gym-website",
+      "description": "Live deployed Next.js fitness website for FlexFit Gym with responsive design and animations.",
+      "imageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070",
+      "imageHint": "gym website homepage"
+    },
+    {
+      "id": "laptop-ecommerce",
+      "description": "3D laptop e-commerce website featuring interactive product models and smooth React animations.",
+      "imageUrl": "https://images.unsplash.com/photo-1491472253230-a044054ca35f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2084",
+      "imageHint": "3D laptop shop interface"
+    },
+    {
       "id": "pricewise",
       "description": "Screenshot of the PriceWise Amazon price tracker application dashboard.",
       "imageUrl": "https://images.unsplash.com/photo-1748609160056-7b95f30041f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXNoYm9hcmQlMjBjaGFydHxlbnwwfHx8fDE3NTkzNTEzMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",

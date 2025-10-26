@@ -11,7 +11,7 @@ export const profileData: Profile = {
   name: 'Saurabh Tiwari',
   title: 'Associate Software Engineer | WordPress & Full-Stack',
   location: 'Noida, India',
-  about: 'Associate SE at Our World Energy. Proficient in WordPress, React/Next, Node, PHP, and MySQL. Experienced in building e-commerce sites, AI tools, and a price tracker.',
+  about: 'Associate SE at Our World Energy. Proficient in React/Next.js,React Native, Node, WordPress, PHP, and MySQL. Experienced in building e-commerce sites, AI tools, and a price tracker.',
   email: 'risabht043@gmail.com',
   phone: 'YOUR_PHONE',
   links: {
@@ -21,7 +21,7 @@ export const profileData: Profile = {
     leetcode: 'https://leetcode.com/saurabhtiwar_17/',
     twitter: '@saurabh', // Add twitter or remove if not applicable
   },
-  resumeUrl: '/Saurabh_Tiwari_Resume.pdf', 
+  resumeUrl: '/Saurabh_Tiwari_Resume.pdf',
 };
 
 export const skillsData: Skill[] = [
@@ -72,7 +72,7 @@ export const experienceData: Experience[] = [
     role: 'Full Stack Intern',
     start: '2023-04-01',
     end: '2023-10-31',
-     bullets: ['Gained hands-on experience in full-stack development, from database design to UI implementation.'],
+    bullets: ['Gained hands-on experience in full-stack development, from database design to UI implementation.'],
   },
   {
     company: 'ScoopIT',
@@ -91,6 +91,32 @@ export const experienceData: Experience[] = [
 ];
 
 export const projectsData: Project[] = [
+  {
+    title: 'FlexFit Gym Website',
+    slug: 'flexfit-gym',
+    summary: 'A fully responsive fitness website built with Next.js, featuring modern UI, animations, and a dynamic class schedule.',
+    tech: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion'],
+    repo: 'https://github.com/sk230144', // replace with actual repo link if separate
+    live: 'https://gymdemo0312.netlify.app/',
+    images: [findImage('gym-website')],
+    highlights: [
+      'Animated and responsive Next.js frontend',
+      'Dynamic sections for classes, memberships, and trainers',
+    ],
+  },
+  {
+    title: '3D Laptop E-Commerce',
+    slug: 'laptop-3d-ecommerce',
+    summary: 'Interactive 3D e-commerce site for laptops using React Three Fiber with smooth animations and dynamic product views.',
+    tech: ['React', 'Three.js', 'React Three Fiber', 'Tailwind CSS'],
+    repo: 'https://github.com/sk230144',
+    live: 'https://merry-semolina-6a4c79.netlify.app/',
+    images: [findImage('laptop-ecommerce')],
+    highlights: [
+      'Real-time 3D product viewer with interactive controls',
+      'Modern responsive UI with smooth transitions',
+    ],
+  },
   {
     title: 'Amazon Price Tracker',
     slug: 'pricewise-tracker',

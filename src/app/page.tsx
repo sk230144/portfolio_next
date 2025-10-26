@@ -32,7 +32,7 @@ export default async function Home() {
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Button asChild size="lg">
-            <a href={profile.resumeUrl} target="_blank" rel="noopener noreferrer" download>
+            <a href={'https://drive.google.com/file/d/1JmW8DSXHoQMB2-Ppikyt3iNak4EHBT6H/view'} target="_blank" rel="noopener noreferrer" download>
               <Download className="mr-2 h-4 w-4" />
               Download CV
             </a>
